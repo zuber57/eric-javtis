@@ -5,6 +5,7 @@
     --icon-color:#074058;
     --menu-color:#737373;
     --sub-margin: 24px;
+    --color-black: #000;
 }
 /* global variable end */
 
@@ -39,16 +40,6 @@
     align-items: end;
 }
 
-.header__icon svg {
-    stroke-width: 0.5px;
-    stroke: #074058;
-}
-
-.header__icon .icon {
-    width: 26.741px;
-    height: 26.667px;
-}
-
 .annoucmentbar .announcement-bar span,
 .list-unstyled.list-social span {
     font-family: var(--font-body-family);
@@ -80,7 +71,71 @@ body .header {
     text-decoration: none;
 }
 
+.header__icon svg {
+    stroke-width: 0.5px;
+    stroke: #074058;
+}
+
+.header__icon .icon {
+    width: 26.741px;
+    height: 26.667px;
+}
 ul.list-menu li:last-child a {
     padding-right: 0;
 }
 /* header css end */
+
+/* Top Banner CSS Start */
+
+.custom-banner .banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.custom-banner .banner-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.custom-banner .banner-content {
+  width: 453px;
+  color: var(--color-black);
+  background: #fff;
+  padding: 45px 25px;
+  position: absolute;
+  left: 50px;
+}
+
+.custom-banner .banner-button {
+  display: inline-block;
+  padding: 15px 48px;
+  background: #2D2A2A;
+  color: #fff;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.banner-subtext {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.custom-banner.reverse .banner-inner {
+  flex-direction: row-reverse;
+}
+
+.banner-titlecus {
+  margin: 0;
+  color: var(--color-black);
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+}
+
+/* Top Banner CSS End */
