@@ -1,0 +1,86 @@
+/* global variable start */
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff; 
+    --icon-color:#074058;
+    --menu-color:#737373;
+    --sub-margin: 24px;
+}
+/* global variable end */
+
+/* annoucementbar css start */
+.annoucmentbar {
+    padding: 10px 0;
+}
+
+.annoucmentbar .list-social {
+    grid-column: 3;
+    justify-content: end;
+}
+
+.annoucmentbar .announcement-bar {
+    grid-column: 1;
+}
+
+.annoucmentbar .list-unstyled.list-social .list-social__link {
+    height: 26px;
+    padding: 5px;
+}
+
+.annoucmentbar .list-social__item .svg-wrapper {
+    height: 16px;
+    width: 16px;
+}
+
+.menu_iconswap {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.header__icon svg {
+    stroke-width: 0.5px;
+    stroke: #074058;
+}
+
+.header__icon .icon {
+    width: 26.741px;
+    height: 26.667px;
+}
+
+.annoucmentbar .announcement-bar span,
+.list-unstyled.list-social span {
+    font-family: var(--font-body-family);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    color: var(--secondary-color);
+}
+
+.list-unstyled.list-social {
+    align-items: center;
+}
+/* annoucementbar css end */
+
+/* header css start */
+body .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu_iconswap .list-menu__item span {
+    color: var(--menu-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+ul.list-menu li:last-child a {
+    padding-right: 0;
+}
+/* header css end */
