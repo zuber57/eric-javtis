@@ -194,3 +194,94 @@ body .custom-csssectioned {
 
 /* image with text section css end */
 
+/* featured collection section css */
+
+.collection__title h2 {
+  color: var(--color-black);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  margin-bottom: 48px;
+}
+
+.product-grid {
+  margin: 0 !important;
+}
+
+.custom-arrow {
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.product_slider .slick-prev {
+  left: 93%; 
+}
+
+.product_slider .slick-next {
+  right: 0px; 
+}
+
+.card__information .card-information,
+body .card__information .card__heading {
+  color: #0F0F0F;
+  text-align: center;
+  font-family: var(--font-body-family);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.2px;
+}
+
+.card__media .media img {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  scale: 1.1;
+}
+
+.card.card--standard .card__inner.color-scheme-2.gradient.ratio {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product_slider .slick-prev,
+.product_slider .slick-next {
+  position: absolute;
+  top: -50px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.custom-arrow:before,
+.custom-arrow:after {
+  display: none;
+}
+
+.product_slider .slick-slide {
+  margin-right: 32px;
+}
+
+.product_slider .slick-list {
+  margin-right: -32px;
+}
+
+.product_slider .slick-track {
+  display: flex;
+}
+
+.card-wrapper.product-card-wrapper.underline-links-hover {
+  max-width: -webkit-fill-available;
+}
+
+/* featured collection css end */
+
