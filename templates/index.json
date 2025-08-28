@@ -145,12 +145,48 @@
         "padding_top": 84,
         "padding_bottom": 84
       }
+    },
+    "newsletter_kP7XNt": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_hh3ypf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Get 10% off your first order",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_kwAefV": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_UfedjQ": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_hh3ypf",
+        "paragraph_kwAefV",
+        "email_form_UfedjQ"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "form_side_image": "shopify://shop_images/fall-studio-shot-two-models-with-blond-wavy-hairstyle-wool-straw-hat-wearing-striped-poncho_1.png",
+        "color_scheme": "scheme-2",
+        "full_width": false,
+        "padding_top": 56,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
     "custom_banner_JfKR9A",
     "image_with_text_VjxAEB",
     "image_with_text_qMKmJg",
-    "featured_collection"
+    "featured_collection",
+    "newsletter_kP7XNt"
   ]
 }

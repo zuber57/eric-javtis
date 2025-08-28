@@ -285,3 +285,154 @@ body .card__information .card__heading {
 
 /* featured collection css end */
 
+/* newsletter section css start */
+
+.newsletter_baanerconatienr {
+  display: flex;
+  position: relative;
+}
+
+.newsletter__wrapper {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 700px !important;
+}
+
+.newsletter-form__field-wrapper .field__label {
+  position: static;
+  margin-bottom: 14px;
+  color: #000;
+}
+
+.newsletter-form__field-wrapper .field {
+  flex-direction: column-reverse;
+  align-items: start;
+}
+
+.newsletter-form__field-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 28px;
+  row-gap: 12px;
+  max-width: 100% !important;
+  align-items: end;
+}
+
+.form-side-image {
+  display: flex;
+  align-items: end;
+  width: 50%;
+}
+
+.newsletter__wrapper h2 {
+  font-size: 28px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.newsletter-form__field-wrapper .field__input {
+  border-radius: 6px;
+  border: 1px solid #C4C4C4;
+  background: #FFF;
+}
+
+.newsletter-form__field-wrapper .field:before,
+.newsletter-form__field-wrapper .field:after {
+  display: none;
+}
+
+.newsletter-form {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.custom_formbtn {
+  position: static;
+  background: #2D2A2A !important;
+  color: #fff;
+  display: block;
+  width: auto !important;
+  height: fit-content !important;
+}
+
+.custom_formbtn:before,
+.custom_formbtn:after {
+  display: none;
+}
+
+/* newsletter section css end */
+
+/* responsive css start */
+
+@media (max-width: 1340px) {
+  .newsletter_baanerconatienr {
+    flex-wrap: wrap;
+  }
+
+  .form-side-image {
+    position: absolute;
+    display: none;
+  }
+
+  .newsletter__wrapper {
+    width: 100% !important;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1100px) {
+  .product_slider .slick-prev {
+    left: 90%;
+  }
+}
+
+@media (max-width: 999px) {
+  .footer__blocks-wrapper {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-image {
+    position: absolute;
+    z-index: -1;
+  }
+  .newsletter_baanerconatienr h2 {
+    text-align:center;
+  }
+
+  .custom-banner .banner-content {
+    position: static;
+    width: 100%;
+    margin: 74px 0;
+    background: #ffffffeb;
+    border-radius: 10px;
+  }
+
+  .product_slider .slick-prev {
+    left: 85%;
+  }
+
+  .product_slider .slick-list {
+    margin: 0;
+  }
+}
+
+@media (max-width: 585px) {
+  .product_slider .slick-prev {
+    left: 80%;
+  }
+
+  .newsletter-form__field-wrapper {
+    grid-template-columns: auto;
+  }
+}
+
+/* responsive css end */
