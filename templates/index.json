@@ -22,6 +22,102 @@
         "button_link": ""
       }
     },
+    "image_with_text_VjxAEB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_AgLntw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Enjoy Exclusive Benefits",
+            "heading_size": "h1"
+          }
+        },
+        "text_N4U9Dq": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Our best pricing, plus cash-back rewards</li><li>Free or discounted design services ($349 value per project)</li><li>Dedicated account representative</li><li>Free samples</li><li>Access to our comprehensive Trade Portal</li><li>Our industry-leading warranty, and more</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_LPG6Rh": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read More",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AgLntw",
+        "text_N4U9Dq",
+        "button_LPG6Rh"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/portrait-smiling-young-couple_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 84,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_qMKmJg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GayxVx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore New Trends",
+            "heading_size": "h1"
+          }
+        },
+        "text_dXRJUA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution <br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_gHx8R3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read More",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GayxVx",
+        "text_dXRJUA",
+        "button_gHx8R3"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/what-kind-hat-is-fashionable-this-season_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 84,
+        "padding_bottom": 0
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -53,6 +149,8 @@
   },
   "order": [
     "custom_banner_JfKR9A",
+    "image_with_text_VjxAEB",
+    "image_with_text_qMKmJg",
     "featured_collection"
   ]
 }

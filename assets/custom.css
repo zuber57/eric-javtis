@@ -170,3 +170,27 @@ body .footer-block__heading {
 
 /* footer css end */
 
+/* image with text section css */
+
+.image-with-text__text.rte.body ul {
+  padding: 0;
+}
+
+body .custom-csssectioned {
+  padding: 0;
+}
+
+.image-with-text__text-item.grid__item {
+  width: 30%;
+}
+
+.image-with-text__media {
+  border-radius: 8px !important;
+}
+
+.image-with-text__grid {
+  gap: 42px !important;
+}
+
+/* image with text section css end */
+
