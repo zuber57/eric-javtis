@@ -139,3 +139,34 @@ ul.list-menu li:last-child a {
 }
 
 /* Top Banner CSS End */
+
+/* footer css start */
+
+body .footer-block__heading {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  margin-bottom: var(--sub-margin);
+}
+
+.footer__blocks-wrapper {
+  display: grid;
+  grid-template-columns: 350px auto 231px auto;
+  gap: 50px;
+}
+
+.footer__blocks-wrapper .footer-block.grid__item {
+  width: 100%;
+}
+
+.footer-block__details-content .link.link--text {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-block__details-content.rte p {
+  color: #fff;
+}
+
+/* footer css end */
+
