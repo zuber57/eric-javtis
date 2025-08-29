@@ -1,0 +1,174 @@
+{% stylesheet %}
+.lookbook-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  padding-top: 84px ;
+  align-items: center;
+}
+.lookbook-product.active img {
+    max-width: max-content;
+}
+.lookbook-image-wrapper {
+  position: relative;
+  width: 50%;
+}
+.lookbook-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.lookbook-dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: transform .2s ease;
+  box-shadow: 0 0 9px 3px;
+  outline: auto;
+}
+.lookbook-dot:hover {
+  transform: scale(1.2);
+}
+.lookbook-products {
+  width: 50%;
+  overflow: hidden;
+}
+.lookbook-product {
+  display: none;
+}
+.lookbook-product.active {
+  display: block;
+  text-align: center;
+}
+.lookbook-product .add-to-cart {
+  background: #2d2d2d;
+  padding: 12px 20px;
+  width: fit-content;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media (max-width:768px){
+ .lookbook-gallery {
+   flex-wrap: wrap;
+  }
+  .lookbook-image-wrapper{
+    width: 100%;
+  }
+  .lookbook-products{
+    width: 100%;
+  }
+}
+{% endstylesheet %}
+
+<div class="page-width">
+ <div class="lookbook-gallery">
+   <!-- LEFT IMAGE -->
+   <div class="lookbook-image-wrapper">
+    <img class="lookbook-image" src="{{ section.settings.image | image_url: width: 800 }}" height="100%" width="100%" alt="Lookbook Image">
+
+    {% for block in section.blocks %}
+      <div
+        class="lookbook-dot"
+        data-index="{{ forloop.index0 }}"
+        style="top: {{ block.settings.top }}%; left: {{ block.settings.left }}%;">
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- RIGHT PRODUCT SLIDES -->
+  <div class="lookbook-products">
+    {% for block in section.blocks %}
+      {% assign product = block.settings.product %}
+      {% if product %}
+        <div class="lookbook-product{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
+          <h3>{{ product.title }}</h3>
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | image_url: width: 400 }}" height="100%" width="100%" alt="{{ product.title }}">
+          </a>
+          <p>{{ product.price | money }}</p>
+
+          <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+            <button type="submit" class="btn add-to-cart">Add to Cart</button>
+          </form>
+        </div>
+      {% endif %}
+    {% endfor %}
+   </div>
+ </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dots = document.querySelectorAll(".lookbook-dot");
+    const products = document.querySelectorAll(".lookbook-product");
+
+    dots.forEach(dot => {
+      dot.addEventListener("click", function() {
+        const index = this.getAttribute("data-index");
+
+        products.forEach(p => p.classList.remove("active"));
+        const target = document.querySelector(`.lookbook-product[data-index='${index}']`);
+        if (target) target.classList.add("active");
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Lookbook Gallery",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Lookbook Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "dot",
+      "name": "Product Dot",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        },
+        {
+          "type": "range",
+          "id": "top",
+          "label": "Dot Top Position (%)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "left",
+          "label": "Dot Left Position (%)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Lookbook Gallery",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
