@@ -9,62 +9,131 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "custom_banner_JfKR9A": {
+      "type": "custom-banner",
+      "name": "Custom Banner",
+      "settings": {
+        "banner_image": "shopify://shop_images/two-fashionable-young-women-casual-trendy-spring-coat-boots-with-heels-black-hat-stylish-handbag_1_1.png",
+        "background_color": "linear-gradient(45deg, transparent, #898989)",
+        "overlay_color": "linear-gradient(45deg, transparent, #898989)",
+        "heading": "Explore Eric Javits Collection",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+        "button_text": "Shop Now",
+        "button_link": ""
+      }
+    },
+    "image_with_text_VjxAEB": {
+      "type": "image-with-text",
       "blocks": {
-        "heading": {
+        "heading_AgLntw": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Enjoy Exclusive Benefits",
+            "heading_size": "h1"
           }
         },
-        "button": {
-          "type": "buttons",
+        "text_N4U9Dq": {
+          "type": "text",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<ul><li>Our best pricing, plus cash-back rewards</li><li>Free or discounted design services ($349 value per project)</li><li>Dedicated account representative</li><li>Free samples</li><li>Access to our comprehensive Trade Portal</li><li>Our industry-leading warranty, and more</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button_LPG6Rh": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read More",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "heading_AgLntw",
+        "text_N4U9Dq",
+        "button_LPG6Rh"
       ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "image": "shopify://shop_images/portrait-smiling-young-couple_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
         "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 84,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_qMKmJg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GayxVx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore New Trends",
+            "heading_size": "h1"
+          }
+        },
+        "text_dXRJUA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution <br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_gHx8R3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read More",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GayxVx",
+        "text_dXRJUA",
+        "button_gHx8R3"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/what-kind-hat-is-fashionable-this-season_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 84,
+        "padding_bottom": 0
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "collection": "frontpage",
+        "products_to_show": 4,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -72,13 +141,75 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "swipe_on_mobile": false,
+        "padding_top": 84,
+        "padding_bottom": 84
+      }
+    },
+    "newsletter_kP7XNt": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_hh3ypf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Get 10% off your first order",
+            "heading_size": "h1"
+          }
+        },
+        "email_form_UfedjQ": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_hh3ypf",
+        "email_form_UfedjQ"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "form_side_image": "shopify://shop_images/fall-studio-shot-two-models-with-blond-wavy-hairstyle-wool-straw-hat-wearing-striped-poncho_1.png",
+        "color_scheme": "scheme-2",
+        "full_width": false,
+        "padding_top": 56,
+        "padding_bottom": 100
+      }
+    },
+    "lookbook_gallery_aPFjw4": {
+      "type": "lookbook-gallery",
+      "blocks": {
+        "dot_mrPind": {
+          "type": "dot",
+          "settings": {
+            "product": "lorem-ispum-dollar",
+            "top": 22,
+            "left": 35
+          }
+        },
+        "dot_3xU4hn": {
+          "type": "dot",
+          "settings": {
+            "product": "clothes",
+            "top": 62,
+            "left": 48
+          }
+        }
+      },
+      "block_order": [
+        "dot_mrPind",
+        "dot_3xU4hn"
+      ],
+      "name": "Lookbook Gallery",
+      "settings": {
+        "image": "shopify://shop_images/1I5A9094_38f795fe-d292-4479-8e92-08c86120ec7c_1.webp"
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "custom_banner_JfKR9A",
+    "image_with_text_VjxAEB",
+    "image_with_text_qMKmJg",
+    "featured_collection",
+    "newsletter_kP7XNt",
+    "lookbook_gallery_aPFjw4"
   ]
 }
