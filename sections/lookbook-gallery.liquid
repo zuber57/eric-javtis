@@ -3,7 +3,8 @@
   display: flex;
   gap: 20px;
   flex-wrap: nowrap;
-  padding-top: 40px ;
+  padding-top: 84px ;
+  align-items: center;
 }
 .lookbook-product.active img {
     max-width: max-content;
@@ -19,13 +20,15 @@
 }
 .lookbook-dot {
   position: absolute;
-  width: 14px;
-  height: 14px;
-  background-color: #000;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
-  border: 2px solid #fff;
-  transition: transform 0.2s ease;
+  border: 1px solid #000;
+  transition: transform .2s ease;
+  box-shadow: 0 0 9px 3px;
+  outline: auto;
 }
 .lookbook-dot:hover {
   transform: scale(1.2);
@@ -49,10 +52,17 @@
   border: 0;
   border-radius: 2px;
   font-size: 18px;
+  cursor: pointer;
 }
 @media (max-width:768px){
  .lookbook-gallery {
    flex-wrap: wrap;
+  }
+  .lookbook-image-wrapper{
+    width: 100%;
+  }
+  .lookbook-products{
+    width: 100%;
   }
 }
 {% endstylesheet %}

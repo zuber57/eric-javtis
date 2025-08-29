@@ -414,10 +414,6 @@ body .card__information .card__heading {
     position: absolute;
     z-index: -1;
   }
-  .newsletter_baanerconatienr h2 {
-    text-align:center;
-  }
-
   .custom-banner .banner-content {
     position: static;
     width: 100%;
