@@ -156,12 +156,6 @@
             "heading_size": "h1"
           }
         },
-        "paragraph_kwAefV": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
-          }
-        },
         "email_form_UfedjQ": {
           "type": "email_form",
           "settings": {}
@@ -169,7 +163,6 @@
       },
       "block_order": [
         "heading_hh3ypf",
-        "paragraph_kwAefV",
         "email_form_UfedjQ"
       ],
       "name": "t:sections.newsletter.presets.name",
@@ -180,6 +173,35 @@
         "padding_top": 56,
         "padding_bottom": 100
       }
+    },
+    "lookbook_gallery_aPFjw4": {
+      "type": "lookbook-gallery",
+      "blocks": {
+        "dot_mrPind": {
+          "type": "dot",
+          "settings": {
+            "product": "lorem-ispum-dollar",
+            "top": 22,
+            "left": 35
+          }
+        },
+        "dot_3xU4hn": {
+          "type": "dot",
+          "settings": {
+            "product": "clothes",
+            "top": 62,
+            "left": 48
+          }
+        }
+      },
+      "block_order": [
+        "dot_mrPind",
+        "dot_3xU4hn"
+      ],
+      "name": "Lookbook Gallery",
+      "settings": {
+        "image": "shopify://shop_images/1I5A9094_38f795fe-d292-4479-8e92-08c86120ec7c_1.webp"
+      }
     }
   },
   "order": [
@@ -187,6 +209,7 @@
     "image_with_text_VjxAEB",
     "image_with_text_qMKmJg",
     "featured_collection",
-    "newsletter_kP7XNt"
+    "newsletter_kP7XNt",
+    "lookbook_gallery_aPFjw4"
   ]
 }
