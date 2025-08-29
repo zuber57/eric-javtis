@@ -356,7 +356,11 @@ body .card__information .card__heading {
 .newsletter-form__field-wrapper .field:after {
   display: none;
 }
-
+.newsletter_baanerconatienr .field__input:not(:placeholder-shown)~.field__label, 
+.newsletter_baanerconatienr .field__input:-webkit-autofill~.field__label {
+  font-size: 1.6rem;
+  letter-spacing:.1rem;
+}
 .newsletter-form {
   margin: 0;
   width: 100%;
