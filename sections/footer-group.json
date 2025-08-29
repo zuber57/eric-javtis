@@ -13,18 +13,54 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "text_WNEKD8": {
+          "type": "text",
+          "settings": {
+            "heading": "About Us",
+            "subtext": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution </p>"
+          }
+        },
+        "link_list_mmXwnn": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Get Help",
+            "menu": "footer"
+          }
+        },
+        "link_list_tt6Ryx": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Customer Services",
+            "menu": "footer-menu2"
+          }
+        },
+        "link_list_zpjLWq": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Eric Javits",
+            "menu": "footer-menu3"
+          }
+        }
+      },
+      "block_order": [
+        "text_WNEKD8",
+        "link_list_mmXwnn",
+        "link_list_tt6Ryx",
+        "link_list_zpjLWq"
+      ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "color_scheme": "scheme-4",
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": true,
-        "margin_top": 0,
-        "padding_top": 36,
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 60,
+        "padding_top": 76,
         "padding_bottom": 36
       }
     }
